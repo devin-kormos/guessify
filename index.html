@@ -21,26 +21,23 @@
     <section class="container-fluid oop pt-6" id="top">
         <div class="container text-center oop-2">
             <h2>Enter your name!</h2>
-            <input type="text" id="text1" required></input>
-            <input type="button" id="button1" value="Add" onclick="addName()"></input>
+            <input type="text" class="btn btn-secondary" id="text1" required></input>
+            <div><input type="button" class="btn btn-outline-primary mt-3" id="button1" value="Submit" onclick="addName()"></input></div>
         </div>
         <svg class="oop-divider divider" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg"><path d="M1440 21.21V120H0V21.21C120 35.07 240 42 360 42s240-6.93 360-20.79c88.328-8.794 154.574-14.333 198.738-16.618A3120.562 3120.562 0 0 1 1080 .42c120 0 240 6.93 360 20.79z"></path></svg>
     </section>
     <section class="container-fluid iie" id="bottom">
         <div class="container text-center iie-2">
-            <div class="container">
-                <div>Name: <span class="name"></span></div>
-                <div>Sex: <span class="gender"></span></div>
-                <div>Average Age: <span class="age"></span></div>
-                <div>Top Country with Name: 
-                    <span class="nationality-1"></span>
-                    <span class="nationality-2"></span>
-                    <span class="nationality-3"></span>
-                </div>
-                <div>Occurances of Name: <span class="count"></span></div>
+            <div class="container" id="iie">
+                <div class="pt-2">Name: <span class="name"></span></div>
+                <div class="pt-2">Sex: <span class="gender"></span></div>
+                <div class="pt-2">Average Age: <span class="age"></span></div>
+                <div class="pt-2">Top Country for Name: <span class="nationality-1"></span></div>
+                <div class="pt-2">Occurances of Name: <span class="count"></span></div>
+            
             </div>
             <div class="backToTop">
-                <input type="button" id="toTop" value="Return To Top" onclick="toTop();delayReload()"></input>
+                <input type="button" class="btn btn-outline-light mt-3" id="toTop" value="Return To Top" onclick="toTop();delayReload()"></input>
             </div>
         </div>
         <svg viewBox="0 0 1920 250" xmlns="http://www.w3.org/2000/svg" class="divider iie-divider"><path d="M0 195.553s208.547-75.581 701.325-20.768c376.707 41.908 520.834-67.962 722.545-67.962 222.926 0 311.553 83.523 496.129 86.394V250H0v-54.447z" class="footer3"></path></svg>
