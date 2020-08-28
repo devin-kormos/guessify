@@ -1,0 +1,130 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(236, 239, 244);
+    background-color: rgb(59, 66, 82);
+    overflow: hidden;
+    /* margin-top: 58px; */
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+#loading {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(59, 66, 82);
+    z-index: 1003;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 200ms ease-out;
+    user-select: none;
+}
+
+.loaded #loading {
+    opacity: 0;
+}
+
+.loader {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transition: left 150ms ease-out, top 150ms ease-out, transform 150ms ease-out;
+}
+
+.loaded .loader {
+    top: 1%;
+    left: 1%;
+    transform: scale(.3)
+}
+
+
+.loaded #loading {
+    opacity: 0;
+}
+
+.content {
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+}
+
+.loaded .content {
+    opacity: 1;
+}
+
+.navbar {
+    background-color: rgb(46, 52, 64);
+    height: 58px;
+}
+
+.badge-dark {
+    background-color: rgb(41, 46, 57);
+    color: rgb(236, 239, 244);
+}
+
+.divider {
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: transparent;
+    pointer-events: none;
+    user-select: none;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+    position: relative;
+}
+
+.oop {
+    background-color: rgb(46, 52, 64);
+    padding-top: 58px;
+    height: 100vh;
+}
+
+.oop-2 {
+    
+}
+
+.oop-divider {
+    fill: rgb(41, 46, 57);
+    transition: fill 400ms ease-in-out 0s;
+}
+
+.iie {
+    background-color: rgb(41, 46, 57);
+    padding-top: 40px;
+}
+
+.iie-2 {
+    height: calc(100vh - 15vh);
+}
+
+.end {
+    background-color: rgb(59, 66, 82);
+    height: 6vh;
+}
+
+.footer3 {
+    fill: rgb(59, 66, 82);
+}
