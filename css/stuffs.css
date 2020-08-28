@@ -103,7 +103,9 @@ body {
 }
 
 .oop-2 {
-    
+    background-color: rgba(59, 66, 82, .6);
+    border-radius: 6px;
+    padding: 3rem 2rem;
 }
 
 .oop-divider {
@@ -118,6 +120,18 @@ body {
 
 .iie-2 {
     height: calc(100vh - 15vh);
+}
+
+.iie-3 {
+    padding-top: .5rem;
+}
+
+.iie .container > div >  div {
+    font-weight: normal
+}
+
+.iie .container span {
+    font-weight: bold;
 }
 
 .end {
