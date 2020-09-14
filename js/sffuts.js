@@ -1,15 +1,5 @@
-// window.addEventListener('load', (event) => {
-//     setTimeout(function(){
-//         let budy = document.querySelector("body")
-//         budy.classList.add("loaded")
-//     }, 200)
-//     setTimeout(function(){
-//         let loadin = document.getElementById("loading")
-//         let navBur = document.querySelector(".navbar")
-//         navBur.classList.add("block")
-//         loadin.classList.add("none")
-//     }, 400)
-// })
+const btn = document.querySelector('#button1')
+const textBox = document.querySelector('#text1')
 
 function toTop() {
     document.getElementById('top').scrollIntoView({
@@ -28,3 +18,14 @@ function delayReload() {
         window.location.reload()
     }, 700)
 }
+
+function hideThing() {
+    textBox.classList.add('notouch')
+}
+
+textBox.addEventListener('keyup',(e)=>{
+  e.preventDefault()
+   if(e.keyCode === 13){
+       btn.click()
+  }
+})

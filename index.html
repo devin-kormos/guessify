@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="css/stuffs.css">
 </head>
 <body>
-<!-- <div id="loading">
-    <div class="loader"><img src="req/strawberry.svg" alt="Strawberry" width="160px" height="160px"></div>
-</div> -->
 <div id="content">
     <nav class="navbar fixed-top">
-        <!-- <nav class="navbar fixed-top none"> -->
         <a class="navbar-brand" href="#">
             <img src="req/strawberry.svg" width="30" height="30" alt="Strawberry"></a><a href="http://www.meme.cx" target="_blank" class="badge badge-dark"><b>memeCX</b></a>
     </nav>
     <section class="container-fluid oop pt-6" id="top">
         <div class="container text-center oop-2">
+            <h2><u>Guessify!</u></h2>
+            <h5>This website will take in your name and give you statistics on what is the most common gender for your name, the average age of people with your name, the country with the most people with your name, and how many people name their kids your name yearly! </h5>
+        </div>
+        <div class="container text-center oop-2">
             <h2>Enter your name!</h2>
             <input type="text" class="btn btn-secondary" id="text1" required></input>
-            <div><input type="button" class="btn btn-outline-primary mt-3" id="button1" value="Submit" onclick="addName()"></input></div>
+            <div><input type="button" class="btn btn-outline-primary mt-3" id="button1" value="Submit" onclick="addName();hideThing();"></input></div>
         </div>
         <svg class="oop-divider divider" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg"><path d="M1440 21.21V120H0V21.21C120 35.07 240 42 360 42s240-6.93 360-20.79c88.328-8.794 154.574-14.333 198.738-16.618A3120.562 3120.562 0 0 1 1080 .42c120 0 240 6.93 360 20.79z"></path></svg>
     </section>
@@ -38,6 +38,10 @@
             </div>
             <div class="backToTop">
                 <input type="button" class="btn btn-outline-light mt-3" id="toTop" value="Return To Top" onclick="toTop();delayReload()"></input>
+            </div>
+            <div class="container text-center oop-2">
+                <h2><u>What's to come?</u></h2>
+                <h5>What's being implemented next is the use of Astrology signs based as well around your name and information per each sign.</h5>
             </div>
         </div>
         <svg viewBox="0 0 1920 250" xmlns="http://www.w3.org/2000/svg" class="divider iie-divider"><path d="M0 195.553s208.547-75.581 701.325-20.768c376.707 41.908 520.834-67.962 722.545-67.962 222.926 0 311.553 83.523 496.129 86.394V250H0v-54.447z" class="footer3"></path></svg>
