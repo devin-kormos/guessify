@@ -105,7 +105,6 @@ body {
     background-color: rgb(46, 52, 64);
     padding-top: 58px;
     height: 100vh;
-    
 }
 
 .backToTop {
@@ -117,6 +116,10 @@ body {
     border-radius: 6px;
     padding: 3rem 2rem;
     margin-bottom: 12px;
+}
+
+.oop-2 ul {
+    text-align: start;
 }
 
 .oop .oop-2 {
