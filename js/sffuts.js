@@ -1,5 +1,5 @@
-// const btn = document.querySelector('#button1')
-// const textBox = document.querySelector('#text1')
+const btn = document.querySelector('#button1')
+const textBox = document.querySelector('#text1')
 
 $("#nameForm").submit(function (e) {
     e.preventDefault();
@@ -23,13 +23,8 @@ function delayReload() {
     }, 700)
 }
 
-function hideThing() {
-    // textBox.classList.add('notouch')
+function clearThis(target) {
+    if (target.value.length > 1) {
+        target.value = "";
+    }
 }
-
-// textBox.addEventListener('keyup',(e)=>{
-//   e.preventDefault()
-//    if(e.keyCode === 13){
-//        btn.click()
-//   }
-// })

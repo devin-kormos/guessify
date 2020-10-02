@@ -19,6 +19,7 @@ function validateForm() {
         nameReq();
         gendrReq();
         nationReq();
+        clearThis(textBox);
     }
 }
 
@@ -41,7 +42,6 @@ function nameReq() {
     var data = JSON.parse(this.response)
 
     if (request.status >= 200 && request.status < 400) {
-        console.log(data)
         let nameSpan = document.querySelector(".name")
         let ageSpan = document.querySelector(".age")
         let countSpan = document.querySelector(".count")
@@ -67,7 +67,6 @@ function gendrReq() {
     var data = JSON.parse(this.response)
 
     if (request.status >= 200 && request.status < 400) {
-        console.log(data)
         let genderSpan = document.querySelector(".gender")
         let theGender = capit(data.gender)
         genderSpan.textContent = theGender
@@ -88,7 +87,6 @@ function nationReq() {
     var data = JSON.parse(this.response)
 
     if (request.status >= 200 && request.status < 400) {
-        console.log(data)
         const regionNamesInEnglish = new Intl.DisplayNames(['en'], { type: 'region' });
         const nameOfNation = regionNamesInEnglish.of(`${data.country[0].country_id}`)
         let nationSpan = document.querySelector(".nationality-1")

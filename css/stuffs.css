@@ -21,6 +21,12 @@ body {
     overflow: hidden;
 }
 
+.end span,
+.oop-2.py-4,
+.oop-2 h5 {
+    transition: all .25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .none {
     display: none;
 }
@@ -87,7 +93,7 @@ body {
 .divider {
     display: block;
     position: absolute;
-    bottom: -1px;
+    bottom: 0px;
     left: 0px;
     right: 0px;
     width: 100%;
@@ -96,6 +102,7 @@ body {
     user-select: none;
     vertical-align: middle;
     overflow: hidden;
+    z-index: -1;
 }
 
 .container-fluid {
@@ -147,4 +154,40 @@ body {
 
 .footer3 {
     fill: rgb(248, 249, 251);
+}
+
+@media screen and (max-height: 600px) {
+    .oop-2 h5 {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .oop-2 h5 {
+        font-size: 100%;
+    }
+}
+
+@media screen and (max-height: 450px) and (orientation: landscape) {
+    .oop-2 h5 ul,
+    .iie-2 .oop-2 {
+        display: none;
+    }
+    .oop-2.py-4 {
+        padding-top: 0!important;
+    }
+    .iie-2 input {
+        background-color: #eee;
+    }
+    .end span {
+        width: 100%;
+        text-align: center;
+        background-color: inherit;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .end span {
+        font-size: 80%;
+    }
 }
