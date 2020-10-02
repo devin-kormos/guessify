@@ -14,7 +14,7 @@ A fun application to find out information from your name!
 
 ## Live Demo
 
-Try the application here [https://gf.meme.cx/](https://gf.meme.cx/)
+Try the application here [https://gf.meme.cx/](http://gf.meme.cx/)
 
 ## Features
 
