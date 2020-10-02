@@ -7,7 +7,21 @@ function capit(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-var x = 0;
+function validateForm() {
+    var y = 0;
+    var x = document.forms["nameForm"]["fname"].value;
+    if (x === "") {
+        alert("Name must be filled out");
+        return false;
+    } else {
+        name.push(x);
+        toBottom();
+        nameReq();
+        gendrReq();
+        nationReq();
+    }
+}
+
 function addName() {
     name[x] = document.getElementById("text1").value
     x++
@@ -75,8 +89,10 @@ function nationReq() {
 
     if (request.status >= 200 && request.status < 400) {
         console.log(data)
+        const regionNamesInEnglish = new Intl.DisplayNames(['en'], { type: 'region' });
+        const nameOfNation = regionNamesInEnglish.of(`${data.country[0].country_id}`)
         let nationSpan = document.querySelector(".nationality-1")
-        nationSpan.textContent = data.country[0].country_id
+        nationSpan.textContent = nameOfNation
     } else {
         console.log('error')
     }
